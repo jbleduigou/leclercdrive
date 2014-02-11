@@ -9,7 +9,7 @@ function getPrice(text) {
    }   
    //cas du prix par piece
    if (endsWith(text, '.')) {
-     return Number(text.substring(0, text.length-1));
+     return Number(text.substring(0, text.length-1)) * 100;
    }
    return Number(text);
 }
@@ -20,5 +20,3 @@ function sortItems() {
      return getPrice($(a).find('.spanPrixUniteMesure').text().replace(/[^0-9\.]+/g,'')) - getPrice($(b).find('.spanPrixUniteMesure').text().replace(/[^0-9\.]+/g,''));
    }).appendTo('.ulProdListe');
 }
-
-
