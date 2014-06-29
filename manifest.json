@@ -3,7 +3,7 @@
 
   "name": "Leclerc Drive outil de tri",
   "description": "Leclerc Drive outil de tri",
-  "version": "1.0",
+  "version": "2.0",
   "icons": {
     "128" : "sorting.png"
   },
