@@ -63,7 +63,7 @@ function updatePriceWithPromotion(item) {
 
 function sortItems() {
    $('.ulProdListe > div').sort(function(a,b) {
-     var priceDifference = getCorrectedPrice(getPrice($(a).find('.spanPrixUniteMesure').text().replace(/[^0-9\.]+/g,''), 10000), $(a)) - getCorrectedPrice(getPrice($(b).find('.spanPrixUniteMesure').text().replace(/[^0-9\.]+/g,''), 1000), $(b));
+     var priceDifference = getCorrectedPrice(getPrice($(a).find('.spanPrixUniteMesure').text().replace(/[^0-9\.]+/g,''), 10000), $(a)) - getCorrectedPrice(getPrice($(b).find('.spanPrixUniteMesure').text().replace(/[^0-9\.]+/g,''), 10000), $(b));
 	 if (priceDifference == 0.0 || priceDifference == 0) {
 	    var libelleA = $(a).find('.divLibelle1').text() + $(a).find('.divLibelle2').text() + $(a).find('.divPrdContaineur').attr('idprod');
 	    var libelleB = $(b).find('.divLibelle1').text() + $(b).find('.divLibelle2').text() + $(b).find('.divPrdContaineur').attr('idprod');
